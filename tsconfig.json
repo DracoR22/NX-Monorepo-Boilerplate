@@ -2,7 +2,7 @@
     "compilerOptions": {
       "target": "ESNext",
       "module": "ES2020",
-      "strict": true
+      "strict": true,
     },
     "exclude": ["node_modules"]
   }

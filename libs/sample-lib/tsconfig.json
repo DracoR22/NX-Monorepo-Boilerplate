@@ -5,7 +5,9 @@
     "rootDir": ".",
     "jsx": "react",
     "declaration": true,
-    "declarationMap": true
+    "declarationMap": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
   },
   "include": ["index.ts"]
 }

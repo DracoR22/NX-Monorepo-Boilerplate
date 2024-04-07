@@ -5,14 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "node ./run-tests.js",
-    "build": "pnpm exec nx run-many --target=build"
-
+    "build": "pnpm exec nx run-many --target=build",
+    "format": "prettier  \"{apps,libs}/**/*.{ts,tsx,js,json}\" --ignore-path .gitignore",
+    "format:check": "pnpm format --check",
+    "format:write": "pnpm format --write",
+    "lint": "pnpm exec nx run-many --target=lint",
+    "tsc": "pnpm exec nx run-many --target=tsc",
+    "validate": "pnpm format:write && pnpm tsc && pnpm lint",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "eslint": "~8.57.0",
-    "nx": "18.2.3"
+    "nx": "18.2.3",
+    "prettier": "^3.0.0"
   }
 }

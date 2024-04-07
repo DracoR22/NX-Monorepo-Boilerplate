@@ -14,6 +14,9 @@ importers:
       nx:
         specifier: 18.2.3
         version: 18.2.3
+      prettier:
+        specifier: ^3.0.0
+        version: 3.2.5
 
   apps/api:
     dependencies:
@@ -26,6 +29,9 @@ importers:
       '@nestjs/platform-express':
         specifier: ^10.0.0
         version: 10.3.7(@nestjs/common@10.3.7)(@nestjs/core@10.3.7)
+      '@suply-chain/nest-lib':
+        specifier: workspace:^
+        version: link:../../libs/nest-lib
       '@suply-chain/sample-lib':
         specifier: workspace:^
         version: link:../../libs/sample-lib
@@ -141,6 +147,12 @@ importers:
         version: 3.4.3
       typescript:
         specifier: ^5
+        version: 5.4.4
+
+  libs/nest-lib:
+    devDependencies:
+      typescript:
+        specifier: ^5.4.4
         version: 5.4.4
 
   libs/sample-lib:

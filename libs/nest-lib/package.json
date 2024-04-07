@@ -1,0 +1,17 @@
+{
+  "name": "@suply-chain/nest-lib",
+  "version": "1.0.0",
+  "description": "This is a library for Nestjs applications",
+  "main": "dist/index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "tsc",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.4"
+  }
+}

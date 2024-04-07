@@ -1,11 +1,9 @@
-import { Button } from "@suply-chain/sample-lib"
+import { Button } from '@suply-chain/sample-lib'
 
 const HomePage = () => {
-
-
   return (
     <div>
-      <Button/>
+      <Button />
     </div>
   )
 }

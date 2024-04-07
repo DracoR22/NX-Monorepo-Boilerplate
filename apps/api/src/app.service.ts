@@ -1,8 +1,11 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common'
+import { Hello } from '@suply-chain/nest-lib'
 
 @Injectable()
 export class AppService {
   getHello(): string {
-    return 'Hello World!';
+    const hello = Hello()
+    console.log(hello)
+    return hello
   }
 }

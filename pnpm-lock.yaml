@@ -35,12 +35,9 @@ importers:
       '@nestjs/platform-express':
         specifier: ^10.0.0
         version: 10.3.7(@nestjs/common@10.3.7)(@nestjs/core@10.3.7)
-      '@suply-chain/nest-lib':
+      '@supply-chain/nest-lib':
         specifier: workspace:^
         version: link:../../libs/nest-lib
-      '@suply-chain/sample-lib':
-        specifier: workspace:^
-        version: link:../../libs/sample-lib
       reflect-metadata:
         specifier: ^0.2.0
         version: 0.2.2
@@ -114,9 +111,9 @@ importers:
 
   apps/web:
     dependencies:
-      '@suply-chain/sample-lib':
+      '@supply-chain/react-lib':
         specifier: workspace:^
-        version: link:../../libs/sample-lib
+        version: link:../../libs/react-lib
       next:
         specifier: 14.1.4
         version: 14.1.4(react-dom@18.2.0)(react@18.2.0)
@@ -157,6 +154,24 @@ importers:
 
   libs/nest-lib:
     devDependencies:
+      typescript:
+        specifier: ^5.4.4
+        version: 5.4.4
+
+  libs/react-lib:
+    devDependencies:
+      '@types/react':
+        specifier: ^18
+        version: 18.2.74
+      '@types/react-dom':
+        specifier: ^18
+        version: 18.2.24
+      react:
+        specifier: ^18
+        version: 18.2.0
+      react-dom:
+        specifier: ^18
+        version: 18.2.0(react@18.2.0)
       typescript:
         specifier: ^5.4.4
         version: 5.4.4

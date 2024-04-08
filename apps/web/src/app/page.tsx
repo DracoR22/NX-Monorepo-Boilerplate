@@ -1,5 +1,4 @@
-import { Button } from '@suply-chain/sample-lib'
-
+import { Button } from '@supply-chain/react-lib'
 const HomePage = () => {
   return (
     <div>

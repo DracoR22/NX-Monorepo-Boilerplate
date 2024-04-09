@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   db:
-    container_name: supply-chain_db
+    container_name: supply_db
     image: postgres
     restart: always
     ports:
@@ -12,9 +12,9 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - db_data_supply-chain:/var/lib/postgresql/data
+      - db_data_supply:/var/lib/postgresql/data
   pgadmin:
-    container_name: supply-chain_pgadmin
+    container_name: supply_pgadmin
     image: dpage/pgadmin4
     restart: always
     environment:
@@ -25,4 +25,4 @@ services:
     depends_on:
       - db
 volumes:
-  db_data_supply-chain:
+  db_data_supply:

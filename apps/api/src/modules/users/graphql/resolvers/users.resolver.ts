@@ -1,5 +1,10 @@
-import { Resolver } from '@nestjs/graphql'
+import { Query, Resolver } from '@nestjs/graphql'
 import { User } from '../entities/user.entity'
 
 @Resolver(() => User)
-export class UserResolver {}
+export class UsersResolver {
+  @Query(() => String)
+  sayHello(): string {
+    return 'Hello World!'
+  }
+}

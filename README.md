@@ -7,7 +7,7 @@
 5. NestJs backend
 6. NextJs frontend 
 
-####Scripts
+#### Scripts:
 
 These are some of the scripts used in this Monorepo
 

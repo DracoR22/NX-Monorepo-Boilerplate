@@ -1,0 +1,30 @@
+query Item($where: ItemWhereUniqueInput!) {
+item(where: $where) {
+  uid
+  name
+  updatedAt
+  id
+  }
+}
+
+mutation Login($loginInput: LoginInput!) {
+  login(loginInput: $loginInput) {
+    user {
+      updatedAt
+      uid
+      name
+      image
+      createdAt
+      email
+    }
+    token
+  }
+}
+
+query user($where: UserWhereUniqueInput!) {
+  user(where: $where) {
+    uid
+    name
+    email
+  }
+}

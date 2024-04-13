@@ -7,6 +7,7 @@ import { PrismaModule } from './common/prisma/prisma.module'
 import { UsersModule } from './modules/users/users.module'
 import { JwtModule } from '@nestjs/jwt'
 import { MAX_AGE } from '@supply-chain/utils'
+import { ItemsModule } from './modules/items/items.module'
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { MAX_AGE } from '@supply-chain/utils'
 
     PrismaModule,
     UsersModule,
+    ItemsModule,
   ],
   controllers: [],
   providers: [],

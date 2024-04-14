@@ -8,14 +8,17 @@
     ".": "./dist/index.js"
   },
   "scripts": {
-    "codegen": "graphql-codegen --config codegen.ts"
+    "codegen": "graphql-codegen --config codegen.ts",
+    "dev": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@graphql-typed-document-node/core": "^3.2.0",
-    "graphql": "^16.8.1"
+    "@supply-chain/utils": "workspace:^",
+    "graphql": "^16.8.1",
+    "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^5.0.2",
@@ -23,10 +26,13 @@
     "@graphql-codegen/typed-document-node": "^5.0.6",
     "@graphql-codegen/typescript-operations": "^4.2.0",
     "@parcel/watcher": "^2.4.1",
+    "@types/jsonwebtoken": "^9.0.6",
     "@types/node": "^20.12.7",
+    "next-auth": "^4.24.7",
     "typescript": "^5.4.5"
   },
   "peerDependencies": {
-    "@parcel/watcher": "^2.4.1"
+    "@parcel/watcher": "^2.4.1",
+    "next-auth": "^4.24.7"
   }
 }

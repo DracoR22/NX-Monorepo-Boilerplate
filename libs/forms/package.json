@@ -6,7 +6,8 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsc"
+    "dev": "tsc",
+    "build": "tsc"
   },
   "exports": {
     ".": "./dist/index.js"
